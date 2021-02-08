@@ -1,0 +1,23 @@
+.page-main {
+  box-sizing: border-box;
+  position: relative;
+
+  &:after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100vh;
+    background-image: url("../img/map.png");
+    position: absolute;
+    top: 55%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 0;
+  }
+
+  &__order,
+  &__form {
+    position: relative;
+    z-index: 1;
+  }
+}

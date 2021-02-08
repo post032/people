@@ -1,0 +1,51 @@
+.order {
+  box-sizing: border-box;
+  position: relative;
+  padding-top: 85px;
+
+  &__title {
+    font-size: 36px;
+    color: #ffffff;
+    text-transform: uppercase;
+    line-height: 1.2;
+    text-align: center;
+    margin-bottom: 0;
+
+    &--blue {
+      color: #3e9cdc;
+    }
+  }
+
+  &__text {
+    font-size: 18px;
+    color: #bbbbbb;
+    line-height: 1.222;
+    text-align: center;
+  }
+
+  &__stage {
+    margin-top: 78px;
+    margin-left: -60px;
+    margin-right: -42px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .order {
+    &__stage {
+      margin-top: 78px;
+      margin-left: 0;
+      margin-right: 0;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .order {
+    &__stage {
+      margin-top: 78px;
+      margin-left: 0;
+      margin-right: 0;
+    }
+  }
+}

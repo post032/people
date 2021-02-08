@@ -1,0 +1,90 @@
+.select {
+  display: block;
+  position: relative;
+  width: 100%;
+  max-width: 368px;
+  margin-bottom: 10px;
+}
+
+.new-select {
+  cursor: pointer;
+  user-select: none;
+  border: solid 1px rgb(255, 255, 255);
+  border-radius: 3px;
+  background-color: rgba(255, 255, 255, 0.851);
+  height: 45px;
+  padding: 0 10px;
+  max-width: 368px;
+  font-size: 18px;
+  color: #272733;
+  line-height: 1.222;
+  text-align: left;
+  display: flex;
+  align-items: center;
+}
+
+.new-select.on {
+  border: solid 1px #3d4050;
+  background-color: #3d4050;
+  color: #ffffff;
+}
+
+.new-select__list {
+  position: absolute;
+  top: 45px;
+  left: 0;
+  border: 1px solid #3d4050;
+  cursor: pointer;
+  width: 99.7%;
+  z-index: 2;
+  background: rgba(39, 39, 51, 0.902);
+  user-select: none;
+  border-radius: 3px;
+
+}
+
+.new-select__list.on {
+  display: block;
+}
+
+.new-select__item span {
+  display: block;
+  padding: 10px 15px;
+}
+
+.new-select__item span:hover {
+  color: #42a9ed;
+}
+
+.new-select:after {
+  content: '';
+  display: block;
+  width: 15px;
+  height: 7px;
+  position: absolute;
+  right: 9px;
+  top: 20px;
+  background-image: url("../img/arrow.png");
+  background-repeat: no-repeat;
+}
+
+.new-select.on:after {
+  background-image: url("../img/arrow-white.png");
+}
+
+@media (max-width: 1180px) {
+  .select {
+    width: 30%;
+  }
+}
+
+@media (max-width: 767px) {
+  .select {
+    width: 100%;
+    max-width: none;
+  }
+
+  .new-select {
+    max-width: none;
+  }
+}

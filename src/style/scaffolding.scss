@@ -1,0 +1,88 @@
+body {
+  padding: 0;
+  margin: 0 auto;
+  min-width: 320px;
+  font-size: 16px;
+  line-height: 30px;
+  font-family: "Lato", "Arial", sans-serif;
+  color: $text-color;
+  background-color: $basic-color;
+  font-style: normal;
+  position: relative;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  padding: 0 32px;
+  margin: 0 auto;
+  position: relative;
+  max-width: 1234px;
+}
+
+@media (max-width: 767px) {
+  .container {
+    box-sizing: border-box;
+    padding: 0 8px;
+    margin: 0 auto;
+    width: 100%;
+    position: relative;
+  }
+}
+
+@media (max-width: 1024px) {
+  .container {
+    padding: 0 16px;
+    margin: 0 auto;
+    position: relative;
+  }
+}
+
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+@font-face {
+  font-family: "Lato";
+  src: url("../fonts/LatoRegular.woff2") format("woff2"), url("../fonts/LatoRegular.woff") format("woff"), url("../fonts/LatoRegular.ttf") format("ttf");
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: "Lato";
+  src: url("../fonts/LatoBold.woff2") format("woff2"), url("../fonts/LatoBold.woff") format("woff"), url("../fonts/LatoBold.ttf") format("ttf");
+  font-style: normal;
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: "Lato";
+  src: url("../fonts/LatoBlack.woff2") format("woff2"), url("../fonts/LatoBlack.woff") format("woff"), url("../fonts/LatoBlack.ttf") format("ttf");
+  font-style: normal;
+  font-weight: 900;
+}
+
+@font-face {
+  font-family: "Lato";
+  src: url("../fonts/LatoSemibold.woff2") format("woff2"), url("../fonts/LatoSemibold.woff") format("woff"), url("../fonts/LatoSemibold.ttf") format("ttf");
+  font-style: normal;
+  font-weight: 600;
+}
